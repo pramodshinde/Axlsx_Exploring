@@ -1,0 +1,24 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1374903287.0051932:@value{	I"length:EFipI"digest;
+F"%0e940a0c5c65c1a934c6cfc653788e35I"source;
+FI"p/* line 6, ../../app/assets/stylesheets/home.css.scss */
+h1 {
+  margin-right: 530px;
+}
+
+/* line 10, ../../app/assets/stylesheets/home.css.scss */
+.question {
+  margin-top: 30px;
+}
+
+/* line 14, ../../app/assets/stylesheets/home.css.scss */
+.small_text {
+  font-size: 25;
+}
+
+/* line 18, ../../app/assets/stylesheets/home.css.scss */
+.medium_text {
+  margin-top: 20px;
+}
+;
+FI"_version;
+F"%fe2c415693e3e08910cd57401c4956ea

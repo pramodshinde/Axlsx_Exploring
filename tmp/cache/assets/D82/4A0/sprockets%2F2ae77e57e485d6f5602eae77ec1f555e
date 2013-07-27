@@ -1,4 +1,6 @@
-/*
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1374915843.6657596:@value{	I"length:EFi TI"digest;
+F"%3cc77bce30f65c92a6016e33b6baf29aI"source;
+FI" T/*
     So you like the style of impress.js demo?
     Or maybe you are just curious how it was done?
     
@@ -27,6 +29,7 @@
     You can probably argue if it is needed here, or not, but for sure it
     doesn't do any harm and gives us a fresh start.
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -711,3 +714,6 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+;
+FI"_version;
+F"%6f6bbc2e95c26d6872544f5ee0a4c87e

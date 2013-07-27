@@ -1,4 +1,17 @@
-/*
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1374915843.511798:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%6f6bbc2e95c26d6872544f5ee0a4c87eI"logical_path;
+FI"impress.css;
+TI"pathname;
+FI"-$root/app/assets/stylesheets/impress.css;
+TI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2013-07-27T14:33:49+05:30;
+FI"	body;
+FI" T/*
     So you like the style of impress.js demo?
     Or maybe you are just curious how it was done?
     
@@ -27,6 +40,7 @@
     You can probably argue if it is needed here, or not, but for sure it
     doesn't do any harm and gives us a fresh start.
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -711,3 +725,16 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+;
+FI"asset_paths;
+F[I"-$root/app/assets/stylesheets/impress.css;
+TI"dependency_paths;
+F[{I"	path;
+FI"-$root/app/assets/stylesheets/impress.css;
+TI"
+mtime;
+FIu:	Timei[€]
+:@_zoneI"IST;
+T:nano_numiÑ:nano_deni:submicro"r:offsetiXMI"hexdigest;
+F"%23df9defe3839c4a5b05a5137cabf7e7I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

@@ -1,21 +1,20 @@
 development:
   adapter: mysql2
-  database: datatables_talk_development
+  database: xlsx_talk_development
   pool: 8
   username: root
-  password: josh123
+  password: 
 test:
   adapter: mysql2
-  database: datatables_talk_test
+  database: xlsx_talk_test
   pool: 5
   timeout: 5000
   username: root
-  password: josh123
+  password:
 
 production:
   adapter: pg
-  database: datatables_talk_production
+  database: xlsx_talk_production
   pool: 5
   timeout: 5000
   username: root
-  password: josh123

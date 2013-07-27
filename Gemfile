@@ -22,14 +22,9 @@ end
 
 gem 'jquery-rails'
 
-group :staging do
-  gem 'pg'
-  gem 'thin'
-end
-
 group :production do
-  gem 'pg'
-  gem 'thin'
+ # gem 'pg'
+ # gem 'thin'
 end
 
 # To use ActiveModel has_secure_password
