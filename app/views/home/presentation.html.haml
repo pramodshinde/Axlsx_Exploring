@@ -22,17 +22,17 @@
         %p
           Axlsx is a 
           %strong RubyGem
-          which generate an Office Open XML Spreadsheet with Axlsx you can create excel worksheets with 
+          which generate an Office Open Spreadsheet with Axlsx you can create excel worksheets with 
           %ul 
-            %li charts, 
-            %li images (with links), 
             %li automated and fixed column widths, 
             %li customized styles, 
-            %li tables, 
-            %li conditional formatting, 
-            %li print options, 
             %li merged cells, 
-            %li auto filters, 
+            %li with formula
+            %li images (with links), 
+            %li data types and formats
+            %li Hyperlinks
+            %li charts, 
+            %li print options, 
     .step.slide{"data-x" => "1000", "data-y" => "-1500"}
       %q
         %b Lets start with basic
@@ -140,9 +140,9 @@
     .step.slide{"data-x" => "9000", "data-y" => "-1500"}
       %q
         %b Adding Image
-        %pre img = File.expand_path('image.jpeg')
+        %pre img = File.expand_path('result.png')
         %pre 
-          sheet.add_image(:image_src => img, :noSelect => true, end_at: true, :noMove => true, :hyperlink=>"your path") do |image|
+          sheet.add_image(:image_src => img, :hyperlink=>"http://rubyInsense.heroku.com") do |image|
           image.width=720
           image.height=666
           image.hyperlink.tooltip = "Labeled Link"
@@ -197,7 +197,7 @@
           wb.add_worksheet(:name => "Line Chart") do |sheet|
           sheet.add_row ["First", 1, 5, 7, 9]
           sheet.add_row ["Second", 5, 2, 14, 9]
-          sheet.add_chart(Axlsx::Line3DChart, :title => "example 6: Line Chart", :rotX => 30, :rotY => 20) do |chart|
+          sheet.add_chart(Axlsx::Line3DChart, :title => "Line Chart") do |chart|
           &nbsp;&nbsp;&nbsp;chart.start_at 0, 2
           &nbsp;&nbsp;&nbsp;chart.end_at 10, 15
           &nbsp;&nbsp;&nbsp;chart.add_series :data => sheet["B1:E1"], :title => sheet["A1"]
@@ -212,7 +212,11 @@
         %b Pie Chart
         %pre
           wb.add_worksheet(:name => "Pie Chart") do |sheet|
-          sheet.add_chart(Axlsx::Pie3DChart, :start_at => [0,5], :end_at => [10, 20], :title => "example 3: Pie Chart") do |chart|
+          sheet.add_row ["Grade", "Percentage"]
+          sheet.add_row ["A", @a]
+          sheet.add_row ["B", @b]
+          sheet.add_row ["C", @c]
+          sheet.add_chart(Axlsx::Pie3DChart, :start_at => [0,5], :end_at => [10, 20], :title => "Pie Chart") do |chart|
           &nbsp;&nbsp;&nbsp;chart.add_series :data => sheet["B2:B4"], :labels => sheet["A2:A4"],  :colors => ['FF0000', '00FF00', '0000FF']
           &nbsp;&nbsp;&nbsp;chart.d_lbls.d_lbl_pos = :bestFit
           &nbsp;&nbsp;&nbsp;chart.d_lbls.show_val = :true
