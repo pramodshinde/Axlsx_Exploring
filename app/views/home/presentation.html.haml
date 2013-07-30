@@ -15,14 +15,20 @@
   #impress
     #bored.step.slide{"data-x" => "-1000", "data-y" => "-1500"}
       %q
-        %b{style: 'position: absolute;top: 270px;'} Designing eXcels using Axlsx
+        .w
+          %b Because its total assets includes
+          %p
+            %i 996 commits, 9 branches, 17 releases, 26 contributors, 129,056 downloads
+          %p 
+            %b So lets  
+        %b{style: 'position: absolute;top: 300px;'} Design eXcels using Axlsx
     .step.slide{"data-x" => "0", "data-y" => "-1500"}
       .w
         %b What is Axlsx?
         %p
           Axlsx is a 
           %strong RubyGem
-          which generate an Office Open Spreadsheet with Axlsx you can create excel worksheets with 
+          which generate an Office Open Spreadsheet, with Axlsx you can create excel worksheets with 
           %ul 
             %li automated and fixed column widths, 
             %li customized styles, 
@@ -97,7 +103,7 @@
 
     .step.slide{"data-x" => "5000", "data-y" => "-1500"}
       %q
-        %b Specifying widhts and height
+        %b Specifying widths and height
         %p.small_text this will create row with default widhts fitting text in
         %pre sheet.add_row["I Am to big please fit me inside", "I am default", "I Am costom"]
         .small_text
@@ -238,7 +244,10 @@
 
     .step.slide{"data-x" => "16000", "data-y" => "-1500"}
       %q
-        %b{style: 'position: absolute;top: 270px;'} Thank You!!! :)
+        .w
+          %p For more on Axlsx
+          %p https://github.com/pramodshinde/Axlsx_examples
+          %b{style: 'position: absolute;top: 300px; font-size: 50px;'} Thank You!!! :)
 <script src="assets/impress.js"></script>
 :javascript
   impress().init();    
