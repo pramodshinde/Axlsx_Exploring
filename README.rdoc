@@ -1,3 +1,3 @@
 == Axlsx Exploring 
 
-Exploring features for Axlsx gem in presentation http://axlsx-exploring.herokuapp.com/presentation#/bored
+Exploring features for [Axlsx gem](https://github.com/randym/axlsx) via [Presentation](http://axlsx-exploring.herokuapp.com/presentation#/bored)
